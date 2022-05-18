@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="sass/main.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="advice">
+    <div class="container-md container-fluid d-flex flex-column justify-content-center align-items-center advice-container">
+        <div class="card advice-card d-flex flex-column align-items-center">
+        <p class="lead idnumber" id="idnumber"></p>
+        <blockquote class="blockquote" id="blockquote">
+        <p id="advice-txt"></p>
+         </blockquote> 
+         <picture>
+            <source media="(max-width: 576px)" srcset="images\pattern-divider-mobile.svg">
+            <img src="images/pattern-divider-desktop.svg" alt="divider" class="divider mt-4">
+          </picture>
+         <div class="dice-container d-flex justify-content-center align-items-center" id="getadvice">
+            <img src="images/icon-dice.svg" alt="dice" class="img-fluid dice">
+         </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+    <script src="advice.js"></script>
+    
+</body>
+</html>
